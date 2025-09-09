@@ -1,0 +1,32 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.grid_4col_1-1-1-1 {
+  display: grid;
+  gap: 10px;
+}
+
+@media (width >= 800px) {
+  .grid_4col_1-1-1-1 {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.hvidblomst {
+  grid-row: 1/3;
+}
+
+.gulblomst {
+  grid-column: 2/4;
+}
